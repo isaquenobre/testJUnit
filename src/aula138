@@ -1,0 +1,27 @@
+cd C:\Users\Windows 10 PRO\OneDrive\Documentos\NetBeansProjects\exemplojunit_aula_134_a_136\exemplojunit; "JAVA_HOME=C:\\programar java" cmd /c "\"C:\\IDE Netbeans\\NetBeans-17\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dtest=AssumptionsTeste#validarAlgoSomenteNoUsuarioIsaque \"-Dmaven.ext.class.path=C:\\IDE Netbeans\\NetBeans-17\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar\" -Dfile.encoding=UTF-8 --no-transfer-progress surefire:test"
+Running NetBeans Compile On Save execution. Phase execution is skipped and output directories of dependency projects (with Compile on Save turned on) will be used instead of their jar artifacts.
+Scanning for projects...
+
+----------------< com.isaqueiodscompahia:exemplojunit >-----------------
+Building exemplojunit 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
+
+--- maven-surefire-plugin:2.22.0:test (default-cli) @ exemplojunit ---
+file.encoding cannot be set as system property, use <argLine>-Dfile.encoding=...</argLine> instead
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running AssumptionsTeste
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in AssumptionsTeste
+
+Results:
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  3.317 s
+Finished at: 2025-06-19T20:51:28-03:00
+------------------------------------------------------------------------
