@@ -1,9 +1,12 @@
 
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -18,6 +21,14 @@ public class CondicionaisTeste {
      @Test
      @DisabledIfEnvironmentVariable(named = "USER", matches = "root")
     void validarAlgoSomenteNoUsuarioIsaque(){
+        //Assumptions.assumeFalse("Perfil Padrão".equals(System.getenv("USER")));
+        Assertions.assertEquals(10, 5 + 5);
+        
+    }
+    
+     @Test
+     @EnabledOnOs(OS.WINDOWS)
+    void validarAlgoSomenteNoUsuarioIsaque2(){
         //Assumptions.assumeFalse("Perfil Padrão".equals(System.getenv("USER")));
         Assertions.assertEquals(10, 5 + 5);
         

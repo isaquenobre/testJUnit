@@ -16,8 +16,8 @@ public class AssumptionsTeste {
     
     @Test
     void validarAlgoSomenteNoUsuarioIsaque(){
-        Assumptions.assumeFalse("Perfil Padrão".equals(System.getenv("USER")));
-        Assertions.assertEquals(10, 5 + 5);
+        Assumptions.assumeFalse("usuario".equals(System.getenv("USER")));
+        Assertions.assertEquals(10, 10);
         
     }
 }
